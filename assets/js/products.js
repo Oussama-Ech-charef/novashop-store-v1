@@ -42,7 +42,7 @@ function displayProducts(products) {
 
                     <p>$${product.price}</p>
 
-                    <a href="product-details.html" class="btn">
+                    <a href="product-details.html?id=${product.id}" class="btn">
 
                         View Product
 
