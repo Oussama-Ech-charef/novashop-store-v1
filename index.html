@@ -9,6 +9,8 @@
 
     <title>NovaShop | Premium Tech Store</title>
 
+    <meta name="description" content="Discover premium technology products, modern tech devices, and high-quality accessories at NovaShop, your ultimate tech destination.">
+
     <!-- Google Font -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,7 +42,7 @@
                 NovaShop
             </a>
 
-            <!-- Desktop Navigation -->
+             <!-- Desktop Navigation -->
 
             <ul class="nav-links">
 
@@ -53,11 +55,11 @@
                 </li>
 
                 <li>
-                    <a href="#">Categories</a>
+                    <a href="products.html">Categories</a>
                 </li>
 
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="contact.html">Contact</a>
                 </li>
 
                 
@@ -74,8 +76,9 @@
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </a>
                     
-                    <a href="cart.html">
+                    <a href="cart.html" class="cart-icon-wrapper">
                         <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-count hidden">0</span>
                     </a>
                     
                     <div class="menu-toggle">
@@ -158,47 +161,47 @@
 
                 </div>
 
-                <div class="categories-container">
+                 <div class="categories-container">
 
-                    <div class="category-card">
+                    <a href="products.html?category=Laptops" class="category-card">
 
                         <i class="fa-solid fa-laptop"></i>
 
                         <h3>Laptops</h3>
 
-                    </div>
+                    </a>
 
-                    <div class="category-card">
+                    <a href="products.html?category=Smartphones" class="category-card">
 
                         <i class="fa-solid fa-mobile-screen"></i>
 
                         <h3>Smartphones</h3>
 
-                    </div>
+                    </a>
 
-                    <div class="category-card">
+                    <a href="products.html?category=Headphones" class="category-card">
 
                         <i class="fa-solid fa-headphones"></i>
 
                         <h3>Headphones</h3>
 
-                    </div>
+                    </a>
 
-                    <div class="category-card">
+                    <a href="products.html?category=Watches" class="category-card">
 
                        <i class="fa-solid fa-clock"></i>
 
                         <h3>Smart Watches</h3>
 
-                    </div>
+                    </a>
 
-                    <div class="category-card">
+                    <a href="products.html?category=Accessories" class="category-card">
 
                         <i class="fa-solid fa-keyboard"></i>
 
                         <h3>Accessories</h3>
 
-                    </div>
+                    </a>
 
                 </div>
 
@@ -220,92 +223,7 @@
 
                 </div>
 
-                <div class="products-grid">
-
-                    <div class="product-card">
-                       
-
-                        <img src="https://placehold.co/600x500"
-                            alt="Hero Banner">
-
-                        <!-- <img src="assets/images/products/product-1.png" alt="Product"> -->
-
-                        <div class="product-info">
-
-                            <h3>MacBook Pro M4</h3>
-
-                            <p>$1999</p>
-
-                            <a href="#" class="btn">
-                                View Product
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                    <div class="product-card">
-
-                        <img src="https://placehold.co/600x500"
-                            alt="Hero Banner">
-
-                        <!-- <img src="assets/images/products/product-2.png" alt="Product"> -->
-
-                        <div class="product-info">
-
-                            <h3>iPhone 16 Pro</h3>
-
-                            <p>$1199</p>
-
-                            <a href="#" class="btn">
-                                View Product
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                    <div class="product-card">
-
-                        <img src="https://placehold.co/600x500"
-                            alt="Hero Banner">
-
-                        <!-- <img src="assets/images/products/product-3.png" alt="Product"> -->
-
-                        <div class="product-info">
-
-                            <h3>AirPods Pro</h3>
-
-                            <p>$249</p>
-
-                            <a href="#" class="btn">
-                                View Product
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                    <div class="product-card">
-
-                        <img src="https://placehold.co/600x500"
-                            alt="Hero Banner">
-
-                        <!-- <img src="assets/images/products/product-4.png" alt="Product"> -->
-
-                        <div class="product-info">
-
-                            <h3>Apple Watch Ultra</h3>
-
-                            <p>$799</p>
-
-                            <a href="#" class="btn">
-                                View Product
-                            </a>
-
-                        </div>
-
-                    </div>
+                 <div class="products-grid" id="featured-products-grid">
 
                 </div>
 
@@ -434,15 +352,15 @@
 
                     <ul>
 
-                        <li><a href="#">Laptops</a></li>
+                        <li><a href="products.html?category=Laptops">Laptops</a></li>
 
-                        <li><a href="#">Smartphones</a></li>
+                        <li><a href="products.html?category=Smartphones">Smartphones</a></li>
 
-                        <li><a href="#">Headphones</a></li>
+                        <li><a href="products.html?category=Headphones">Headphones</a></li>
 
-                        <li><a href="#">Smart Watches</a></li>
+                        <li><a href="products.html?category=Watches">Smart Watches</a></li>
 
-                        <li><a href="#">Accessories</a></li>
+                        <li><a href="products.html?category=Accessories">Accessories</a></li>
 
                     </ul>
 
@@ -551,6 +469,8 @@
 
     </footer>
 
+     <script src="assets/js/home.js"></script>
+    <script src="assets/js/search.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 
