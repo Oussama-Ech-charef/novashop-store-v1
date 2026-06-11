@@ -104,11 +104,34 @@ function updateCartBadge() {
     const badges = document.querySelectorAll(".cart-count");
     
     badges.forEach(badge => {
+        const currentCount = parseInt(badge.textContent, 10) || 0;
+        
         if (totalCount > 0) {
             badge.textContent = totalCount;
             badge.classList.remove("hidden");
+            
+            // If count increases, animate the badge and the icon wrapper
+            if (totalCount > currentCount) {
+                badge.classList.remove("pulse-anim");
+                void badge.offsetWidth; // Trigger DOM reflow
+                badge.classList.add("pulse-anim");
+                
+                const iconWrapper = badge.closest(".cart-icon-wrapper");
+                if (iconWrapper) {
+                    iconWrapper.classList.remove("shake-anim");
+                    void iconWrapper.offsetWidth; // Trigger DOM reflow
+                    iconWrapper.classList.add("shake-anim");
+                    
+                    // Remove classes after animation completes
+                    setTimeout(() => {
+                        iconWrapper.classList.remove("shake-anim");
+                        badge.classList.remove("pulse-anim");
+                    }, 500);
+                }
+            }
         } else {
             badge.classList.add("hidden");
+            badge.textContent = "0";
         }
     });
 }
@@ -136,8 +159,9 @@ function showToast(message) {
     
     const toast = document.createElement("div");
     toast.className = "toast";
-    toast.style.background = "var(--secondary-color, #1e293b)";
-    toast.style.color = "#ffffff";
+    toast.style.background = "var(--white-color)";
+    toast.style.color = "var(--secondary-color)";
+    toast.style.border = "1px solid var(--border-color)";
     toast.style.padding = "15px 25px";
     toast.style.borderRadius = "10px";
     toast.style.boxShadow = "0 10px 15px -3px rgba(0, 0, 0, 0.1)";
