@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/contact.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Theme JS (loads early to prevent theme flashing) -->
+    <script src="assets/js/theme.js"></script>
+
 </head>
 
 <body>
@@ -41,15 +45,22 @@
                     <a href="products.html">Categories</a>
                 </li>
                 <li>
+                    <a href="about.html">About Us</a>
+                </li>
+
+                <li>
                     <a href="contact.html">Contact</a>
                 </li>
             </ul>
 
-            <!-- Desktop Icons -->
             <div class="nav-actions">
                 <div class="nav-icons">
                     <a href="#" class="search-toggle">
                         <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+
+                    <a href="#" class="theme-toggle-btn" title="Toggle Theme">
+                        <i class="fa-solid fa-moon"></i>
                     </a>
                     
                     <a href="cart.html" class="cart-icon-wrapper">
@@ -139,7 +150,7 @@
 
                     <!-- Mock Map -->
                     <div class="map-placeholder">
-                        <img src="https://placehold.co/600x400/e2e8f0/64748b?text=Google+Maps+Mockup" alt="Map Storefront Locator">
+                        <img src="assets/images/storefront_map.png" alt="Map Storefront Locator">
                         <div class="map-card-overlay">
                             <i class="fa-solid fa-location-pin"></i>
                             <span>NovaShop New York HQ</span>
@@ -173,7 +184,13 @@
                         <li><a href="#">Our Story</a></li>
                         <li><a href="#">Careers</a></li>
                         <li><a href="#">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li>
+                    <a href="about.html">About Us</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
                     </ul>
                 </div>
 
@@ -253,3 +270,4 @@
 </body>
 
 </html>
+
