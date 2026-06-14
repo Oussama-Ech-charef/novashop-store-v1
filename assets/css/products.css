@@ -1,26 +1,28 @@
-/* PAGE BANNER */
-
 .page-banner {
 
-    padding: 80px 0;
+    padding: 40px 0 20px;
 
     text-align: center;
 
-    background-color: var(--white-color);
+    background-color: var(--background-color);
 
     border-bottom: 1px solid var(--border-color);
 }
 
 .page-banner h1 {
 
-    font-size: 3rem;
+    font-size: 2rem;
 
-    margin-bottom: 15px;
+    font-weight: 500;
+
+    margin-bottom: 8px;
 }
 
 .page-banner p {
 
     color: var(--gray-color);
+
+    font-size: 1rem;
 }
 
 
@@ -43,17 +45,30 @@
 
     width: 100%;
 
-    padding: 15px 20px;
+    padding: 10px 14px;
 
     border: 1px solid var(--border-color);
 
-    border-radius: 12px;
+    border-radius: 4px;
 
     outline: none;
 
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 
-    font-size: 1rem;
+    font-size: 0.95rem;
+
+    font-family: inherit;
+
+    background: var(--white-color);
+
+    color: var(--secondary-color);
+
+    transition: border-color 0.2s;
+}
+
+.products-toolbar input:focus {
+
+    border-color: var(--primary-color);
 }
 
 
@@ -70,35 +85,41 @@
 
 .category-filters button {
 
-    padding: 12px 22px;
-
-    border: none;
-
-    border-radius: 50px;
-
-    background-color: var(--white-color);
+    padding: 8px 18px;
 
     border: 1px solid var(--border-color);
+
+    border-radius: 4px;
+
+    background-color: var(--white-color);
 
     color: var(--secondary-color);
 
     cursor: pointer;
+
+    font-size: 0.9rem;
+
+    font-family: inherit;
 
     transition: var(--transition);
 }
 
 .category-filters button:hover {
 
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 
     color: white;
+
+    border-color: var(--secondary-color);
 }
 
 .category-filters .active {
 
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 
     color: white;
+
+    border-color: var(--secondary-color);
 }
 
 
