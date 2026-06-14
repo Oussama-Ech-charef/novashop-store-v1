@@ -184,46 +184,4 @@
     filter: grayscale(15%);
 }
 
-/* ---- Light Footer Override for Contact Page ---- */
-.footer-light {
-    background-color: var(--white-color);
-    color: var(--gray-color);
-    padding-top: 60px;
-    border-top: 1px solid var(--border-color);
-}
-
-.footer-light .footer-column h3 {
-    color: var(--secondary-color);
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-.footer-light .footer-column a {
-    color: var(--gray-color);
-}
-
-.footer-light .footer-column a:hover {
-    color: var(--primary-color);
-    text-decoration: underline;
-}
-
-.footer-light .footer-brand h2 {
-    color: var(--secondary-color);
-}
-
-.footer-light .footer-brand p {
-    color: var(--gray-color);
-}
-
-.footer-light .social-icons a {
-    color: var(--gray-color);
-}
-
-.footer-light .social-icons a:hover {
-    color: var(--primary-color);
-}
-
-.footer-light .footer-bottom {
-    border-top: 1px solid var(--border-color);
-    color: var(--gray-color);
-}
+/* Footer on this page uses the global .footer style */
